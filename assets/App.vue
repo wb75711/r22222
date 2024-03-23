@@ -264,7 +264,7 @@ export default {
       this.files = [];
       this.folders = [];
       this.loading = true;
-      fetch(`/api/children/${this.cwd}`)
+      fetch(/functions/api/children/${this.cwd}`)
         .then((res) => res.json())
         .then((files) => {
           this.files = files.value;
